@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/username.github.io/junklabgames/`,
   siteMetadata: {
     title: `Junklab Games`,
     siteUrl: `https://junklabgames.github.io/junklabgames/`,
