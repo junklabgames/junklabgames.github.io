@@ -6,6 +6,11 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Junklab Games`,
+    siteUrl: `https://junklabgames.github.io/junklabgames/`,
+    description: `Junklab Games - Creative indie studio specialising in fun, casual mobile games`,
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
