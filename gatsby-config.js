@@ -6,7 +6,6 @@
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: `/public`,
   siteMetadata: {
     title: `Junklab Games`,
     siteUrl: `https://junklabgames.github.io/junklabgames/`,
