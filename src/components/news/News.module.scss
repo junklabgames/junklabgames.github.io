@@ -1,0 +1,17 @@
+.news {
+  text-align: center;
+
+  .post-container {
+    display: flex;
+    justify-content: center;
+
+    .post {
+      margin-right: 30px;
+      display: flex;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}

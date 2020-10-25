@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'LEMON MILK';
+  src: local('LEMON MILK Medium'), local('LEMONMILK-Medium'),
+    url('../../static/fonts/lemonmilk/LEMONMILK-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Lt';
+  src: local('Roboto Light'), local('Roboto-Light'),
+    url('../../static/fonts/roboto/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Regular'), local('Roboto-Regular'),
+    url('../../static/fonts/roboto/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$accent: #f05a23;
+$white: #ffffff;
+$grey: #f8f8f8;
+$font: #414141;
+
+html,
+body {
+  margin: 0;
+  background: #f8f8f8;
+  height: 100%;
+  font-family: 'Roboto Lt';
+  font-size: 100%;
+  font-weight: 300;
+  color: $font;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'LEMON MILK';
+  font-weight: 500;
+}
+
+h1 {
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 1050px;
+}
+
+button {
+  border: none;
+  min-width: 135px;
+  padding: 20px 24px;
+  font-family: 'LEMON MILK';
+
+  &.primary {
+    background: $accent;
+    color: white;
+  }
+
+  .secondary {
+    background: transparent;
+  }
+}
+
+
+

@@ -1,0 +1,13 @@
+.feed {
+  display: flex;
+  justify-content: center;
+
+  div {
+    min-width: 330px;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
