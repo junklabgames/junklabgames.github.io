@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'LEMON MILK';
+    src: local('LEMON MILK Medium'), local('LEMONMILK-Medium'),
+      url('../../static/fonts/lemonmilk/LEMONMILK-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Roboto Lt';
+    src: local('Roboto Light'), local('Roboto-Light'),
+      url('../../static/fonts/roboto/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+html,
+body {
+  @apply font-body bg-gray-200 text-gray-800 leading-relaxed;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-heading;
+}
+
+/** MISC **/
+.gatsby-image-wrapper {
+  @apply block;
+}
+
+/** COMPONENTS **/
+.btn {
+  @apply font-bold py-2 px-4;
+}
+.btn-primary {
+  @apply text-white bg-accent;
+}
+.btn-primary:hover {
+  @apply;
+}
+.btn-secondary {
+  @apply border;
+}
+
+/** TRANSITIONS **/
+.hover-transform-scale {
+  @apply transition duration-150 ease-in-out transform;
+}
+.hover-transform-scale:hover {
+  @apply scale-110;
+}

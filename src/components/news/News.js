@@ -1,29 +1,39 @@
 import React from 'react';
 
-import styles from './News.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default () => {
   return (
-    <section className={styles.news}>
-      <h2>Junklab News</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-        lacus vel facilisis.
+    <section className="text-center max-w-screen-lg mx-auto mt-24">
+      <h2 className="text-4xl mb-4 md:text-5xl">Junklab News</h2>
+      <p className="mb-4">
+        Latest and greatest news from Junklab Games. Follow our social accounts to keep up to date
+        with all latest news and updates.
       </p>
-      <div className={styles.postContainer}>
-        <div className={styles.post}>
-          <img src={`delete-this.png`} alt="blog post" />
-        </div>
-        <div className={styles.post}>
-          <img src={`delete-this.png`} alt="blog post" />
-        </div>
-        <div className={styles.post}>
-          <img src={`delete-this.png`} alt="blog post" />
-        </div>
-      </div>
-      <button className="primary">View more</button>
+      <article className="flex justify-center flex-col items-center md:flex-row">
+        <Article></Article>
+        <Article></Article>
+        <Article></Article>
+      </article>
+      <button className="btn btn-primary hover-transform-scale">
+        <FontAwesomeIcon className="mr-1" icon="caret-square-right" />
+        View more
+      </button>
     </section>
   );
 };
+
+const Article = () => (
+  <article className="mr-4 w-article mb-8 last:mr-0">
+    <img src="https://via.placeholder.com/330x170.png?text=Feature-Image" alt="feature image" />
+    <header>
+      <small>
+        <time datetime="2020-05-16">16 May, 2020</time>
+      </small>
+      <h4>Lorem ipsum dolor sit amet</h4>
+      <a href="#" className="text-tertiary">
+        Read Post <FontAwesomeIcon icon="angle-right" />
+      </a>
+    </header>
+  </article>
+);

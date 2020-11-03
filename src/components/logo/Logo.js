@@ -3,17 +3,16 @@ import Img from 'gatsby-image';
 
 import { StaticQuery, graphql } from 'gatsby';
 
-import styles from './Logo.module.scss';
-
 export default ({ data }) => {
   return (
     <StaticQuery
       query={query}
-      render={data => (
+      render={(data) => (
         <Img
-          fixed={data.file.childImageSharp.fixed}
+          className="w-16 md:w-32"
+          fluid={data.file.childImageSharp.fluid}
           alt="Junklab Games"
-          fadeIn={true}
+          // fadeIn={true}
         />
       )}
     />
@@ -26,8 +25,8 @@ export const query = graphql`
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        fixed(width: 135) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 128) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

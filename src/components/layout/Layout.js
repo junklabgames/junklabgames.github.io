@@ -1,17 +1,15 @@
 import React from 'react';
 
-import { Header, Footer, Hero, Wrap } from '..';
-
-import styles from './Layout.module.scss';
+import { Header, Footer, Hero } from '..';
 
 export default ({ children }) => {
   return (
     <React.Fragment>
-      <Wrap>
+      <div className="container bg-white">
         <Header></Header>
         <Hero></Hero>
         <main>{children}</main>
-      </Wrap>
+      </div>
       <Footer />
     </React.Fragment>
   );

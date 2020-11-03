@@ -7,4 +7,4 @@ export { default as Games } from './games/Games';
 export { default as News } from './news/News';
 export { default as Feed } from './feed/Feed';
 export { default as Contact } from './contact/Contact';
-export { default as Wrap } from './wrap/Wrap';
+export { default as Socials } from './socials/Socials';

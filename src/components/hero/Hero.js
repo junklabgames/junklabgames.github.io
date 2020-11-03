@@ -4,13 +4,11 @@ import Img from 'gatsby-image';
 
 import { StaticQuery, graphql } from 'gatsby';
 
-import styles from './Hero.module.scss';
-
 export default ({ data }) => {
   return (
     <StaticQuery
       query={query}
-      render={data => (
+      render={(data) => (
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Block Buster promotional banner"
