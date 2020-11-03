@@ -15,7 +15,7 @@ export default ({ color = 'text-gray-400', className }) => {
 
 const Link = ({ href, icon, color, className }) => {
   return (
-    <a href={href} className="mr-4 last:mr-0">
+    <a href={href} className="inline-block mr-4 last:mr-0">
       <FontAwesomeIcon
         icon={['fab', icon]}
         className={`${color} hover-transform-scale ${className}`}
