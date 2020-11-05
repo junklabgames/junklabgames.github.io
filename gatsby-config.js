@@ -1,3 +1,5 @@
+const siteConfig = require('./site.config.js');
+
 module.exports = {
   siteMetadata: {
     title: `Junklab Games`,
@@ -64,6 +66,14 @@ module.exports = {
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [siteConfig.googleAnalyticsId],
       },
     },
 

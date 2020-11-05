@@ -1,4 +1,5 @@
 module.exports = {
+  googleAnalyticsId: 'G-6RWY4RWG8F',
   socials: [
     {
       id: 'facebook',
