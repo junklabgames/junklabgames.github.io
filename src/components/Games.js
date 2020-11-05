@@ -1,5 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Img from 'gatsby-image';
 
 export default function Games({ data }) {
@@ -22,15 +21,15 @@ export default function Games({ data }) {
   );
 }
 
-const Buttons = () => (
-  <React.Fragment>
-    <button className="btn btn-primary mt-4 mr-4 w-full hover-transform-scale">
-      <FontAwesomeIcon className="mr-1" icon="save" />
-      Download
-    </button>
-    <button className="btn btn-primary mt-4 w-full hover-transform-scale">
-      <FontAwesomeIcon className="mr-1" icon="gamepad" />
-      Play
-    </button>
-  </React.Fragment>
-);
+// const Buttons = () => (
+//   <React.Fragment>
+//     <button className="btn btn-primary mt-4 mr-4 w-full hover-transform-scale">
+//       <FontAwesomeIcon className="mr-1" icon="save" />
+//       Download
+//     </button>
+//     <button className="btn btn-primary mt-4 w-full hover-transform-scale">
+//       <FontAwesomeIcon className="mr-1" icon="gamepad" />
+//       Play
+//     </button>
+//   </React.Fragment>
+// );

@@ -1,6 +1,5 @@
 import React from 'react';
 import logoSmall from '../images/logo-small.png';
-import Socials from './Socials';
 
 export default function Footer() {
   return (

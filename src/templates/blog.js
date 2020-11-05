@@ -1,20 +1,17 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
-import { Helmet } from 'react-helmet';
+import Seo from '../components/Seo';
 
 import Layout from '../layout/Blog';
 
 export default function Blog({ data }) {
   const post = data.markdownRemark;
   const more = data.allMarkdownRemark;
-  const { title, author, date } = post.frontmatter;
+  const { title, date } = post.frontmatter;
   return (
     <Layout title={title} date={date} more={more}>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>{title}</title>
-      </Helmet>
+      <Seo />
       <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
     </Layout>
   );

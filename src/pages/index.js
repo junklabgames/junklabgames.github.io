@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import {
@@ -15,7 +14,7 @@ import {
   faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons';
 
-import { Helmet } from 'react-helmet';
+import Seo from '../components/Seo';
 
 import Layout from '../layout/Content';
 import Hero from '../components/Hero';
@@ -40,16 +39,11 @@ library.add(
 );
 
 export default function Index({ data }) {
+  const { file } = data;
+
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Junklab Games</title>
-        <meta
-          name="description"
-          content="Junklab Games - Creative indie studio specialising in fun, casual mobile games"
-        />
-      </Helmet>
+      <Seo image={file.childImageSharp.fixed} />
       <Hero />
       <Games data={data} />
       <News data={data} />
@@ -76,6 +70,15 @@ export const data = graphql`
         }
       }
     }
+
+    file(relativePath: { eq: "og-image.png" }) {
+      childImageSharp {
+        fixed(width: 1200, height: 630) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+
     allMarkdownRemark {
       edges {
         node {

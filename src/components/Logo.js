@@ -1,7 +1,7 @@
 import React from 'react';
 import Img from 'gatsby-image';
 
-import { StaticQuery, graphql, Link } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 
 export default function Logo({ data }) {
   return (
