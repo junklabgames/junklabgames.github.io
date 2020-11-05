@@ -60,3 +60,11 @@ h4 {
 .hover-transform-scale:hover {
   @apply scale-110;
 }
+
+.hover-pop-up {
+  @apply transition duration-300 ease-in-out transform;
+}
+
+.hover-pop-up:hover {
+  @apply shadow-md -translate-y-1;
+}
