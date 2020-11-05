@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Post({ title, author, date, description, path, featuredImage }) {
   return (
-    <article className="mr-4 w-article mb-8 last:mr-0">
-      <Image sizes={featuredImage.childImageSharp.sizes} />
+    <article className="mr-4 mb-8 last:mr-0">
+      <Image fluid={featuredImage.childImageSharp.fluid} />
       <header>
         <small>
           <time>{date}</time>

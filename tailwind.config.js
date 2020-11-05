@@ -41,5 +41,5 @@ module.exports = {
     margin: ['first', 'last', 'responsive'],
     padding: ['first', 'last', 'responsive'],
   },
-  plugins: [require('tailwindcss-textshadow')],
+  plugins: [require('tailwindcss-textshadow'), require('@tailwindcss/typography')],
 };

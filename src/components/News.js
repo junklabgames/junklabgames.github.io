@@ -16,20 +16,22 @@ export default function News({ data }) {
           const { title, date, path, featuredImage } = post.node.frontmatter;
 
           return (
-            <Post
-              title={title}
-              date={date}
-              key={`${date}__${title}`}
-              path={path}
-              featuredImage={featuredImage}
-            />
+            <div className="w-article">
+              <Post
+                title={title}
+                date={date}
+                key={`${date}__${title}`}
+                path={path}
+                featuredImage={featuredImage}
+              />
+            </div>
           );
         })}
       </article>
-      <button className="btn btn-primary hover-transform-scale">
+      {/* <a href="/blog" className="btn btn-primary hover-transform-scale">
         <FontAwesomeIcon className="mr-1" icon="caret-square-right" />
         View more
-      </button>
+      </a> */}
     </section>
   );
 }

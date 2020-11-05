@@ -75,8 +75,8 @@ export const data = graphql`
             path
             featuredImage {
               childImageSharp {
-                sizes(maxWidth: 1280) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 320) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

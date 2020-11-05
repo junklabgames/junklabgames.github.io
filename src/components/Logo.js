@@ -1,19 +1,24 @@
 import React from 'react';
 import Img from 'gatsby-image';
 
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 
 export default function Logo({ data }) {
   return (
     <StaticQuery
       query={query}
       render={(data) => (
-        <Img
-          className="w-16 md:w-32"
-          fluid={data.file.childImageSharp.fluid}
-          alt="Junklab Games"
-          // fadeIn={true}
-        />
+        <h1>
+          <span className="hidden">Junklab Games</span>
+          <a href="/">
+            <Img
+              className="w-16 md:w-32"
+              fluid={data.file.childImageSharp.fluid}
+              alt="Junklab Games"
+              // fadeIn={true}
+            />
+          </a>
+        </h1>
       )}
     />
   );
