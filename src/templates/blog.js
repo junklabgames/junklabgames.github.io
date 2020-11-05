@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 
+import { Helmet } from 'react-helmet';
+
 import Layout from '../layout/Blog';
 
 export default function Blog({ data }) {
@@ -9,6 +11,10 @@ export default function Blog({ data }) {
   const { title, author, date } = post.frontmatter;
   return (
     <Layout title={title} date={date} more={more}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title}</title>
+      </Helmet>
       <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
     </Layout>
   );

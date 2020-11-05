@@ -15,6 +15,8 @@ import {
   faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons';
 
+import { Helmet } from 'react-helmet';
+
 import Layout from '../layout/Content';
 import Hero from '../components/Hero';
 import Games from '../components/Games';
@@ -40,6 +42,14 @@ library.add(
 export default function Index({ data }) {
   return (
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Junklab Games</title>
+        <meta
+          name="description"
+          content="Junklab Games - Creative indie studio specialising in fun, casual mobile games"
+        />
+      </Helmet>
       <Hero />
       <Games data={data} />
       <News data={data} />
