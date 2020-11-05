@@ -9,9 +9,9 @@ export default function Contact() {
       <div className="max-w-screen-lg mx-auto">
         <h3 className="text-3xl">Get in touch</h3>
         <p>
-          Interested in working together? Want to build fun, creative games for mobile devices or
-          browsers? Drop us a line to chat about future or present projects, or if you'd just like
-          to say hi!
+          Want to jump into a project together? Want to build fun, creative games for mobile devices
+          or browsers? Drop us a line to chat about future or present projects, or if you feel like
+          saying hi!
         </p>
         <a href="mailto:hello@junklabgames.com" className="block my-4">
           <FontAwesomeIcon icon="envelope" className="mr-2" />

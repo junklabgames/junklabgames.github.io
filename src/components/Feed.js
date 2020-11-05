@@ -37,7 +37,11 @@ export default function Feed() {
           Facebook
         </h3>
         <FacebookProvider appId="679834519343520">
-          <Page href="https://www.facebook.com/Junklab-Games-102687201623984" tabs="timeline" />
+          <Page
+            href="https://www.facebook.com/Junklab-Games-102687201623984"
+            tabs="timeline"
+            width="320"
+          />
         </FacebookProvider>
       </div>
       <div className="w-article mr-4 mb-8 last:mr-0 text-center">

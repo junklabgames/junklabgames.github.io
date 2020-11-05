@@ -7,8 +7,8 @@ export default function Games({ data }) {
     <section className="max-w-screen-lg mx-auto px-4 md:px-0 mt-4 text-center md:mt-24">
       <h2 className="text-4xl mb-2 md:text-5xl">Games</h2>
       <p className="mb-4">
-        We specialise in fun, casual, and hyper-casual games on mobile and in the web browser. Here
-        our some of our titles.
+        We specialise in fun, casual, and hyper-casual games on mobile and the web browser. Here are
+        some of our titles.
       </p>
       <div className="flex justify-center items-center md:items-start flex-col md:flex-row">
         {data.allFile.edges.map(({ node }, index) => (

@@ -16,8 +16,9 @@ export default function Footer() {
         <span className="flex-1 py-4 md:py-20 px-4 first:pl-0">
           <h4>About</h4>
           <p>
-            We specialise in fun, casual, and hyper casual mobiles games for iOS and Android.
-            Junklab Games is run primarily by Isaac Johnson, as a small indie dev studio.
+            We specialise in fun, casual, and hyper-casual mobile games for mobile devices and web
+            browsers. We're an indie game studio who loves to create unique experiences on mobile
+            and web browsers.
           </p>
         </span>
         <span className="flex-1 py-4 md:py-20 px-4 first:pl-0">
