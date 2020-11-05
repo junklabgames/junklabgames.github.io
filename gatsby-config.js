@@ -3,7 +3,7 @@ const siteConfig = require('./site.config.js');
 module.exports = {
   siteMetadata: {
     title: `Junklab Games`,
-    siteUrl: `https://junklabgames.github.io/junklabgames/`,
+    siteUrl: `https://junklabgames.com`,
     description: `Junklab Games - Creative indie studio specialising in fun, casual mobile games`,
     author: `@junklabgames`,
   },
