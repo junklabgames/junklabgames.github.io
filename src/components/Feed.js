@@ -9,11 +9,11 @@ import { FacebookProvider, Page } from 'react-facebook';
 // instagram
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import twitter from '../../images/icon-social-twitter.png';
-import facebook from '../../images/icon-social-facebook.png';
-import instagram from '../../images/icon-social-instagram.png';
+import twitter from '../images/icon-social-twitter.png';
+import facebook from '../images/icon-social-facebook.png';
+import instagram from '../images/icon-social-instagram.png';
 
-export default () => {
+export default function Feed() {
   return (
     <section className="max-w-screen-lg mx-auto flex flex-col items-center justify-center mt-24 md:flex-row md:items-start">
       <div className="w-article mr-4 mb-8 last:mr-0">
@@ -49,4 +49,4 @@ export default () => {
       </div>
     </section>
   );
-};
+}

@@ -1,8 +1,8 @@
 import React from 'react';
-import logoSmall from '../../images/logo-small.png';
-import { Socials } from '..';
+import logoSmall from '../images/logo-small.png';
+import Socials from './Socials';
 
-export default () => {
+export default function Footer() {
   return (
     <footer className="bg-gradient-to-t from-orange-light to-orange-dark text-white">
       <div className="container flex flex-col text-md md:flex-row">
@@ -16,9 +16,8 @@ export default () => {
         <span className="flex-1 py-4 md:py-20 px-4 first:pl-0">
           <h4>About</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-            Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            We specialise in fun, casual, and hyper casual mobiles games for iOS and Android.
+            Junklab Games is run primarily by Isaac Johnson, as a small indie dev studio.
           </p>
         </span>
         <span className="flex-1 py-4 md:py-20 px-4 first:pl-0">
@@ -36,4 +35,4 @@ export default () => {
       </div>
     </footer>
   );
-};
+}

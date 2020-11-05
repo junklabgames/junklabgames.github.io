@@ -1,31 +1,29 @@
 import React from 'react';
+
 import Img from 'gatsby-image';
 
 import { StaticQuery, graphql } from 'gatsby';
 
-export default ({ data }) => {
+export default function Hero({ data }) {
   return (
     <StaticQuery
       query={query}
       render={(data) => (
         <Img
-          className="w-16 md:w-32"
           fluid={data.file.childImageSharp.fluid}
-          alt="Junklab Games"
-          // fadeIn={true}
+          alt="Block Buster promotional banner"
+          fadeIn={true}
         />
       )}
     />
   );
-};
+}
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "logo.png" }) {
+    file(relativePath: { eq: "banner.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 128) {
+        fluid(maxWidth: 1440, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

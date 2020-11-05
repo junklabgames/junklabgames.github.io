@@ -1,9 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import config from '../../../site.config';
+import config from '../../site.config';
 
-export default ({ color = 'text-gray-400', className }) => {
+export default function Socials({ color = 'text-gray-400', className }) {
   return (
     <div>
       {config.socials.map(({ icon, href }) => (
@@ -11,7 +11,7 @@ export default ({ color = 'text-gray-400', className }) => {
       ))}
     </div>
   );
-};
+}
 
 const Link = ({ href, icon, color, className }) => {
   return (

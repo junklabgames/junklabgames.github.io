@@ -12,9 +12,15 @@ import {
   faCaretSquareRight,
   faAngleRight,
   faPlug,
+  faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons';
 
-import { Layout, Games, News, Feed, Contact } from '../components';
+import Layout from '../layout/Content';
+import Hero from '../components/Hero';
+import Games from '../components/Games';
+import News from '../components/News';
+import Feed from '../components/Feed';
+import Contact from '../components/Contact';
 
 // font awesome library creation
 library.add(
@@ -28,21 +34,23 @@ library.add(
   faCaretSquareRight,
   faAngleRight,
   faPlug,
+  faArrowLeft,
 );
 
-export default function Home({ data }) {
+export default function Index({ data }) {
   return (
     <Layout>
+      <Hero />
       <Games data={data} />
-      <News />
+      <News data={data} />
       <Feed />
       <Contact />
     </Layout>
   );
 }
 
-export const query = graphql`
-  query {
+export const data = graphql`
+  query games {
     allFile(
       filter: { extension: {}, relativeDirectory: { eq: "games" } }
       sort: { fields: [base] }
@@ -53,6 +61,24 @@ export const query = graphql`
           childImageSharp {
             fluid(maxWidth: 320) {
               ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            date
+            title
+            path
+            featuredImage {
+              childImageSharp {
+                sizes(maxWidth: 1280) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
             }
           }
         }
