@@ -43,7 +43,7 @@ export default function Index({ data }) {
 
   return (
     <Layout>
-      <Seo image={file.childImageSharp.fixed} />
+      <Seo title="Junklab Games" image={file.childImageSharp.fixed} />
       <Hero />
       <Games data={data} />
       <News data={data} />

@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Junklab Games`,
     siteUrl: `https://junklabgames.com`,
-    description: `Junklab Games - Creative indie studio specialising in fun, casual mobile games`,
+    description: `Creative indie studio specialising in fun, casual mobile games`,
     author: `@junklabgames`,
     keywords: ['games', 'mobile', 'indie', 'gamedev'],
   },
