@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-t from-orange-light to-orange-dark text-white">
       <div className="container flex flex-col text-md md:flex-row">
-        <span className="flex-1 pt-8 pb-4 md:py-20 px-4 first:pl-0 flex flex-row items-start">
+        <span className="flex-1 pt-8 pb-4 md:py-20 px-4 md:first:pl-0 flex flex-row items-start">
           <img src={logoSmall} alt="Junklab games logo" className="mr-4" />
           <span>
             <h4>Games</h4>

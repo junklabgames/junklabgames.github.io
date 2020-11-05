@@ -5,7 +5,7 @@ import Post from './Post';
 
 export default function News({ data }) {
   return (
-    <section className="text-center max-w-screen-lg mx-auto mt-24">
+    <section className="text-center max-w-screen-lg px-4 md:px-0 mx-auto mt-24">
       <h2 className="text-4xl mb-2 md:text-5xl">News</h2>
       <p className="mb-4">
         Latest and greatest news from Junklab Games. Follow our social accounts to keep up to date
