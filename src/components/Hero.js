@@ -9,11 +9,9 @@ export default function Hero({ data }) {
     <StaticQuery
       query={query}
       render={(data) => (
-        <Img
-          fluid={data.file.childImageSharp.fluid}
-          alt="Block Buster promotional banner"
-          fadeIn={true}
-        />
+        <a href="https://apps.apple.com/us/app/brick-buster/id1543321783">
+          <Img fluid={data.file.childImageSharp.fluid} alt="Block Buster promotional banner" fadeIn={true} />
+        </a>
       )}
     />
   );

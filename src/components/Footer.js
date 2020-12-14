@@ -9,23 +9,19 @@ export default function Footer() {
           <img src={logoSmall} alt="Junklab games logo" className="mr-4" />
           <span>
             <h4>Games</h4>
-            <span>Block Buster</span>
+            <span>Brick Buster</span>
           </span>
         </span>
         <span className="flex-1 py-4 md:py-20 px-4 first:pl-0">
           <h4>About</h4>
           <p>
-            We specialise in fun, casual, and hyper-casual mobile games for mobile devices and web
-            browsers. We're an indie game studio who loves to create unique experiences on mobile
-            and web browsers.
+            We specialise in fun, casual, and hyper-casual mobile games for mobile devices and web browsers. We're an indie game studio who loves to create unique experiences on mobile and web
+            browsers.
           </p>
         </span>
         <span className="flex-1 py-4 md:py-20 px-4 first:pl-0">
           <h4>Contact</h4>
-          <p>
-            We’d love to hear from you! Drop us an email or catch us on any of our social media
-            platforms.
-          </p>
+          <p>We’d love to hear from you! Drop us an email or catch us on any of our social media platforms.</p>
           <a href="mailto:hello@junklabgame.com">hello@junklabgames.com</a>
         </span>
         <span className="flex-1 py-4 md:py-20 px-4 first:pl-0">
