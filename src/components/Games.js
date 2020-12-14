@@ -25,7 +25,7 @@ const Buttons = () => (
       <FontAwesomeIcon className="mr-1" icon="gamepad" />
       IOS
     </a>
-    <a href="/brick-buster-release.apk" className="btn btn-primary mt-4 w-full hover-transform-scale">
+    <a href="/brick-buster-release.apk" className="btn btn-primary mt-4 w-full hover-transform-scale" download>
       <FontAwesomeIcon className="mr-1" icon="gamepad" />
       Android
     </a>
