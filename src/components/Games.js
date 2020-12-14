@@ -22,12 +22,12 @@ export default function Games({ data }) {
 const Buttons = () => (
   <React.Fragment>
     <a href="https://apps.apple.com/us/app/brick-buster/id1543321783" className="btn btn-primary mt-4 mr-4 w-full hover-transform-scale">
-      <FontAwesomeIcon className="mr-1" icon="save" />
-      Download
-    </a>
-    <a href="https://apps.apple.com/us/app/brick-buster/id1543321783" className="btn btn-primary mt-4 w-full hover-transform-scale">
       <FontAwesomeIcon className="mr-1" icon="gamepad" />
-      Play
+      IOS
+    </a>
+    <a href="/brick-buster.aab" className="btn btn-primary mt-4 w-full hover-transform-scale">
+      <FontAwesomeIcon className="mr-1" icon="gamepad" />
+      Android
     </a>
   </React.Fragment>
 );
